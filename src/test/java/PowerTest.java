@@ -3,24 +3,24 @@ import org.junit.Test;
 
 public class PowerTest {
     @Test
-    public void one_raised_to_one_is_onew() {
-        assert PowerFinder.OF(1, 1) == 1;
+    public void One_Raised_To_One_Is_One() {
+        assert PowerFinder.findPower(1, 1) == 1;
     }
 
     @Test
-    public void twoRaised_to_one_is_2() {
-        assert PowerFinder.OF(2, 1) == 2;
+    public void Two_Raised_To_one_Is_Two() {
+        assert PowerFinder.findPower(2, 1) == 2;
     }
 
     @Test
-    public void two_power_2_is_4() {
-        assert PowerFinder.OF(2, 2) == 4;
+    public void Two_Raised_To_two_Is_Four() {
+        assert PowerFinder.findPower(2, 2) == 4;
     }
 
     @Test
-    public void power_of_2_and_3_Is_SIX() {
+    public void Three_Raised_To_three_Is_Nine() {
         int expected = 3*3;                         //Added to use breakpoints in debugger
-        int actual = PowerFinder.OF(3, 2);
+        int actual = PowerFinder.findPower(3, 2);
         assert  expected == actual;
     }
 }
