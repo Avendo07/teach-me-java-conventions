@@ -1,9 +1,7 @@
-package powerpackage;
-
-
+import powerpackage.PowerFinder;
 import org.junit.Test;
 
-public class powertest {
+public class PowerTest {
     @Test
     public void one_raised_to_one_is_onew() {
         assert PowerFinder.OF(1, 1) == 1;
