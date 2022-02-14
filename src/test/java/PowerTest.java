@@ -19,6 +19,8 @@ public class PowerTest {
 
     @Test
     public void power_of_2_and_3_Is_SIX() {
-        assert PowerFinder.OF(3, 2) == 3 * 3;
+        int expected = 3*3;                         //Added to use breakpoints in debugger
+        int actual = PowerFinder.OF(3, 2);
+        assert  expected == actual;
     }
 }
